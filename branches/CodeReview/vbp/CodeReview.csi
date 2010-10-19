@@ -1,0 +1,16 @@
+[History]
+B0=CodeReview/Application/TrataErro
+B1=CodeReview/UIAddin/Show
+B2=CodeReview/Application/t
+B3=CodeReview/UIAddin/Hide
+B4=CodeReview/Connect/AddinInstance_OnDisconnection
+B5=CodeReview/Connect/Show
+B6=CodeReview/Connect/Hide
+B7=CodeReview/frmAddIn/CancelButton_Click
+B8=CodeReview/frmAddIn/cmdContar_Click
+B9=CodeReview/UIAddin/Class_Initialize
+B10=CodeReview/frmAddIn/cmdFind_Click
+B11=CodeReview/UIAddin/Class_Terminate
+B12=CodeReview/Connect/AddinInstance_OnConnection
+B13=CodeReview/frmAddIn/Form_Load
+B14=CodeReview/frmAddIn/VerificaPadroes
