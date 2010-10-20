@@ -6,6 +6,7 @@ Begin VB.Form frmAddIn
    ClientLeft      =   2175
    ClientTop       =   1935
    ClientWidth     =   9795
+   ForeColor       =   &H80000008&
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
@@ -105,9 +106,20 @@ Begin VB.Form frmAddIn
    End
    Begin VB.Label lblNroDeLinhas 
       Caption         =   "Nro de Linhas"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   -1  'True
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H8000000D&
       Height          =   255
       Left            =   120
       TabIndex        =   3
+      ToolTipText     =   "Clique para Atualizar"
       Top             =   1275
       Width           =   1095
    End
@@ -218,4 +230,13 @@ End Sub
 '
 'End Sub
 
+Private Sub lblNroDeLinhas_Click()
+On Error GoTo Catch
+    Me.lblNumeroDeLinhas.Caption = mobjUI.ContaLinhas
+Finally:
+    Exit Sub
 
+Catch:
+    Call TrataErro("lblNroDeLinhas_Click", "frmAddIn")
+    Resume Finally
+End Sub
