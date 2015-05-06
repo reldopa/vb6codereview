@@ -1,0 +1,1 @@
+VB6 Add-in to check patterns and code style
